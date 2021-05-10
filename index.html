@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<script src="script.js"></script>
+
+<input id=$id placeholder="tweet id">
+<button onclick="$out.value=''; getTweet($id.value, function(data){$out.value = JSON.stringify(parseTweet(data))})">Get</button>
+<br>
+<textarea id=$out></textarea>
