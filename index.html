@@ -2,7 +2,7 @@
 <meta charset=utf-8>
 <script src="script.js"></script>
 
-<input id=$id placeholder="tweet id">
+<input id=$id placeholder="tweet id" value=1391730111385329666>
 <button onclick="$out.value=''; getTweet($id.value, function(data){$out.value = JSON.stringify(parseTweet(data))})">Get</button>
 <br>
 <textarea id=$out></textarea>
